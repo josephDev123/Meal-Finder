@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#2D2013;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+#container h1{
+    color: white;
+    font-size: 40px;
+}
+
+#container{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    max-width: 100%;
+}
+
+.input_container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+input, button{
+    border: none;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 4px;
+  
+   
+}
+
+input, button:focus{
+    outline: none;
+}
+
+input[type='text']{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+
+}
+
+button{
+    cursor: pointer;
+}
+
+button[type='submit']{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 1px solid black;
+}
+
+button[type='button']{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    
+}
+
+.searhResultHeading{
+    color: white;
+}
+
+.meals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.meals_img_container{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    border: 4px solid white;
+
+}
+
+.meals_img_container img{
+    width: 100%;
+}
+
+.single_meal_info{
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  
+}
+
+.single_meal_info p{
+    font-size: 15px;
+    font-weight: bolder;
+   
+ }
+
+.single_meal_info:hover{
+     opacity: 1;
+ }
+
+
+ .single_meal{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+ }
+
+ .single_meal_container{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 0px 15px;
+    
+ }
+
+ .singleMealImg{
+   max-width: 320px;
+    height: 320px;
+    border: 4px solid white;
+ }
+
+ .singleMealCategoryStrArea{
+    border: 2px dashed yellow;
+    /* padding: 20px 80%;*/
+    width: 100%;
+    margin-top: 40px; 
+ }
+
+ .singleMealInstruction{
+     text-align: justify;
+ }
+
+ .singleMealIngredient{
+text-align: center;
+ }
+
+ .singleMealIngredient ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;  
+ }
+     
+ .singleMealIngredient ul li{
+    background-color: white;
+    padding: 5px;
+    color: red;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 4px;
+
+     }
+
+
+@media (max-width: 320px){
+
+
+}
